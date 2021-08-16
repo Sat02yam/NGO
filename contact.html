@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Contact</title>
+    <style>
+      body {
+        overflow: hidden;
+        font-family: 'Circe Regular';
+      }
+      :root {
+        --secondary: rgb(224, 219, 219);
+        --primary: rgb(166, 214, 233);
+        --primary-dark: rgb(71, 138, 216);
+      }
+      .contact {
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+        max-width: 1400px;
+        width: 100%;
+        padding-right: 100px;
+      }
+      .contact-section {
+        display: flex;
+        margin-top: 100px;
+
+        text-align: center;
+        justify-content: space-around;
+      }
+      p {
+        max-width: 700px;
+        color: #193c3c;
+      }
+      .img1 {
+        position: absolute;
+        bottom: -350px;
+        z-index: -1;
+      }
+      .img2 {
+        position: absolute;
+        top: 100px;
+        left: -70px;
+      }
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .contact-form {
+        width: 200px;
+      }
+      label {
+        font-size: 15px;
+        color: #193c3c;
+      }
+      input {
+        border: 3px solid #71d2d2;
+        border-radius: 5px;
+        height: 35px;
+        width: 300px;
+      }
+      #message {
+        height: 150px;
+        display: flex;
+        flex-flow: row-reverse;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar flex">
+      <span class="title space">NGO Navigation</span>
+      <ul class="flex">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="/Category/index.html">Category</a></li>
+
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="contact">
+      <div class="contact-section">
+        <p>
+          Don't worry, if you have any questions or doubts &mdash; feel free to
+          contact us.
+        </p>
+
+        <div class="contact-form">
+          <div class="form-group">
+            <label for="Name">Name:</label>
+            <input type="text" name="name" id="name" />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" />
+          </div>
+          <div class="form-group">
+            <label for="Subject">Subject:</label>
+            <input type="text" id="subject" name="subject" />
+          </div>
+          <div class="form-group">
+            <label for="Message">Message:</label>
+            <input type="text" id="message" name="message" />
+          </div>
+        </div>
+      </div>
+      <div class="img1">
+        <img src="./Ngo/Group 6.png" alt="" />
+      </div>
+      <div class="img2">
+        <img src="./Ngo/Group 1.png" alt="" />
+      </div>
+    </div>
+  </body>
+</html>

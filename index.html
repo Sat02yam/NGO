@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Category/css/font-circe.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>NGO Navigation - Find your nearest NGO</title>
+  </head>
+  <body id="home">
+    <div class="navbar flex">
+      <span class="title space">NGO Navigation</span>
+      <ul class="flex">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Category/index.html">Category</a></li>
+        <li><a href="/nearby.html">Nearby</a></li>
+
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="section flex">
+      <div class="container1 flex">
+        <div class="web-info flex">
+          <h1>Find. Choose. Donate.</h1>
+          <p>Choose your nearest NGO & make a donation to make a difference.</p>
+          <a href="#about" class="btn">Discover</a>
+          <!-- <button class="btn">button</button> -->
+        </div>
+        <div class="web-img">
+          <img class="img-size" src="Ngo/Group 3.png" alt="group3" />
+        </div>
+      </div>
+      <div id="about" class="container2 flex">
+        <div class="cont-left flex space">
+          <h1 class="shadow">About</h1>
+          <p class="about-info">
+            We at NGO Navigation makes it easier for our users to find their
+            nearest NGO. Our main goal is to give more and more exposure to many
+            of the undiscovered NGOs in our cities.
+          </p>
+          <img class="img-size" src="Ngo/Group 1.png" alt="group1" />
+        </div>
+        <div class="cont-right flex">
+          <div class="donations flex">
+            <span><h1>100</h1></span>
+            <span><h1>535</h1></span>
+            <span><h1>350</h1></span>
+          </div>
+
+          <a class="btn" href="/Category/index.html">Donate Now</a>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $('.btn').on('click', function (event) {
+        if (this.hash !== '') {
+          event.preventDefault();
+          const hash = this.hash;
+          $('html,body').animate(
+            {
+              scrollTop: $(hash).offset().top,
+            },
+            900
+          );
+        }
+      });
+    </script>
+    <script>
+      const successCallback = (position) => {
+        console.log(position);
+      };
+      const errorCallback = (error) => {
+        console.error(error);
+      };
+
+      navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
+    </script>
+  </body>
+</html>

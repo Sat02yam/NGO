@@ -1,0 +1,162 @@
+:root {
+  --primary: #2BAFAF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Circe Regular';
+}
+
+body {
+  background-color: #FBFBFB;
+}
+
+.sidebar {
+  background-color: var(--primary);
+  position: fixed;
+  left: 40px;
+  top: 15vh;
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 1em;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+  -webkit-box-shadow: 0px 20px 28px -8px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 20px 28px -8px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  width: 7vw;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.sidebar ul {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sidebar ul li {
+  list-style: none;
+  padding: 5px 30px;
+}
+
+.sidebar ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+}
+
+.sidebar ul li a span {
+  color: white;
+  font-size: 1.2rem;
+  font-family: 'Circe Light';
+  width: 150px;
+  text-decoration: none;
+  margin-left: 30px;
+  -webkit-transform: translateX(200px);
+          transform: translateX(200px);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.sidebar:hover {
+  opacity: 0.9;
+  width: 20vw;
+}
+
+.sidebar:hover ul li a span {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.sidebar ul li a img {
+  margin: 8px 0;
+}
+
+.bottomwave {
+  position: fixed;
+  bottom: -10px;
+  width: 100vw;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+
+.blank_div {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  margin-top: 16vh;
+}
+
+.blank_page {
+  width: 30%;
+  color: #303030;
+  text-decoration: underline;
+}
+
+.blank_div img {
+  width: 50%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#sw ul, #ed ul, #fd ul, #wm ul, #sp ul, #re ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#sw ul li, #ed ul li, #fd ul li, #wm ul li, #sp ul li, #re ul li {
+  list-style: none;
+}
+
+.csec {
+  right: 0;
+  top: 15vh;
+  width: 85vw;
+  margin-top: 15vh;
+  float: right;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,238 @@
+@font-face {
+  font-family: 'januaryregular';
+  src: url('/Category/fonts/january-webfont.woff2') format('woff2'),
+    url('/Category/fonts/january-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --secondary: rgb(224, 219, 219);
+  --primary: rgb(166, 214, 233);
+  --primary-dark: rgb(71, 138, 216);
+}
+body {
+  line-height: 1.5rem;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.1rem;
+  font-family: 'Circe Regular';
+  background: #fbfbfb;
+}
+#home {
+  height: 200vh;
+  width: 100%;
+  position: relative;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.space {
+  margin: 10px;
+  padding: 10px;
+}
+.img-size {
+  width: 500px;
+}
+.btn {
+  padding: 15px 30px;
+  background: var(--primary-dark);
+  border: none;
+  margin: 20px;
+  font-size: 1.2rem;
+  color: white;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.14);
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  background: #fbfbfb;
+  color: var(--primary-dark);
+  border-radius: 10px;
+  margin: 20px;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+
+.shadow {
+  color: white;
+  text-shadow: 0px 5px 20px rgba(0, 0, 0, 0.14);
+  font-family: 'Cardo', serif;
+}
+.navbar {
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: #fbfbfb;
+}
+.navbar ul li a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #2bafaf;
+  transition: all 0.5s ease;
+  font-size: 18px;
+
+  font-family: 'Lato', sans-serif;
+}
+.title {
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  color: #2bafaf;
+  font-weight: bold;
+}
+li {
+  list-style: none;
+  margin: 10px;
+  padding: 10px 20px;
+}
+a {
+  text-decoration: none;
+}
+.navbar ul li {
+  padding: 10px 3px;
+  margin-right: 40px;
+  transition: all 0.5s ease;
+  background: none;
+}
+.navbar ul li:hover {
+  transform: translateY(-2.5px);
+}
+.section {
+  position: relative;
+  top: 20%;
+  background: url('Ngo/Group 6.png') no-repeat center center/cover;
+  height: 50%;
+  width: 100%;
+}
+.web-info h1 {
+  margin: 15px;
+  margin-left: 20px;
+  color: var(--primary-dark);
+  font-family: 'Cardo', serif;
+  font-size: 3rem;
+}
+.web-info p {
+  margin-left: 20px;
+  font-family: 'Cardo', serif;
+}
+.container1 {
+  position: absolute;
+  z-index: 1;
+  top: -100px;
+  justify-content: space-between;
+
+  /* background: url('Ngo/Vector1.png'); */
+  height: 50%;
+  width: 80%;
+}
+.web-info {
+  align-self: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  color: var(--primary-dark);
+}
+.container2 {
+  position: absolute;
+  z-index: 1;
+  top: 60%;
+  justify-content: space-between;
+  /* background: url('Ngoector1.png'); */
+  height: 80%;
+  width: 90%;
+}
+.cont-left,
+.cont-right {
+  flex-direction: column;
+  flex: 0.5;
+}
+.cont-left {
+  margin-left: 60px;
+  align-items: flex-start;
+}
+.cont-right {
+  margin-top: 120px;
+}
+.cont-right .btn {
+  margin-left: 80px;
+}
+
+.about-info {
+  margin: 60px 0;
+  color: #193c3c;
+}
+.donations {
+  height: 200px;
+  width: 350px;
+  background: var(--primary);
+  margin-left: 50px;
+  margin-bottom: 50px;
+  border-radius: 40px 40px 40px 0;
+}
+.donations span {
+  /* content: ''; */
+
+  /* White Boxes */
+  display: flex;
+  background: white;
+  margin: 30px;
+  transform: rotateY('90deg');
+  color: var(--primary-dark);
+  transform: rotate(45deg);
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+}
+
+.donations h1 {
+  /* Content for White Boxes */
+  display: flex;
+  transform: rotate(-45deg);
+  font-size: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transform: translateX(0.5rem);
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+}
+#near {
+  width: 100vw;
+}
+
+.main-section {
+  display: flex;
+  position: relative;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.main-section ul {
+  display: flex;
+}
+.location {
+  position: absolute;
+  top: 300px;
+  flex: 0.5;
+}
+.csec {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0.5;
+  position: relative;
+  left: 200px;
+  width: 100%;
+}

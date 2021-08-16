@@ -1,0 +1,137 @@
+:root {
+    --primary: #2BAFAF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Circe Regular';
+}
+
+body{
+    background-color: #FBFBFB;
+}
+
+.sidebar{
+    background-color: var(--primary);
+    // width: fit-content;
+    position: fixed;
+    left: 40px;
+    top: 15vh;
+    height: 70vh;
+    display: flex;
+    // flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 1em;
+    transition: all 2s;
+    box-shadow: 0px 20px 28px -8px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    width: 7vw;
+    transition: all 0.5s;
+}
+
+.sidebar ul{
+    padding-top:30px ;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    // align-items: lef;
+    // justify-content: space-between;
+    // background-color: wheat;
+}
+
+.sidebar ul li{
+    // float: left;
+    list-style: none;
+    padding: 5px 30px;
+}
+
+.sidebar ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.sidebar ul li a span{
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Circe Light';
+    width: 150px;
+    text-decoration: none;
+    margin-left: 30px;
+    transform: translateX(200px);
+    transition: all 0.5s ease;
+}
+
+.sidebar:hover{
+    // ul li a span{
+    //     display: block;
+    // }
+    opacity: 0.9;
+    width: 20vw;
+    ul li a span{
+        transform: translateX(0);
+    }
+}
+
+.sidebar ul li a img{
+    margin: 8px 0;
+}
+
+.bottomwave{
+    position: fixed;
+    bottom: -10px;
+    width: 100vw;
+    height: auto;
+    object-fit: cover;
+    // display: none;
+    z-index: -1;
+}
+
+.blank_div{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 16vh;
+}
+
+.blank_page{
+    width: 30%;
+    // text-align: center;
+    // margin-top: 40vh;
+    color: #303030;
+    text-decoration: underline;
+}
+
+.blank_div img{
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+
+#sw ul, #ed ul, #fd ul, #wm ul, #sp ul, #re ul{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sw ul li, #ed ul li, #fd ul li, #wm ul li, #sp ul li, #re ul li{
+    list-style: none;
+}
+
+.csec{
+    // position: fixed;
+    right: 0;
+    top: 15vh;
+    width: 85vw;
+    // height: 70vh;
+    margin-top: 15vh;
+    float: right;
+    // background-color: aqua;
+}
