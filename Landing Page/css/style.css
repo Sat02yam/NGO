@@ -111,7 +111,7 @@ a {
 .section {
   position: relative;
   top: 20%;
-  background: url('Ngo/Group 6.png') no-repeat center center/cover;
+  background: url('../../Ngo/Group 6.png') no-repeat center center/cover;
   height: 50%;
   width: 100%;
 }
