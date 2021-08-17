@@ -28,7 +28,8 @@ body {
   margin-left: 2em;
   margin-bottom: 5em;
   padding: 10rem 0 0;
-  width: 27ch;
+  width: 16vw;
+  height: 45vh;
   border-radius: 1em;
   overflow: hidden;
   -webkit-transition: -webkit-transform 500ms ease;
@@ -43,8 +44,9 @@ body {
 }
 
 .card_content {
-  --padding: 1.5rem;
+  --padding: 1.5em;
   padding: var(--padding);
+  margin-top: -50px;
 }
 
 .card_content p {
@@ -52,6 +54,7 @@ body {
 }
 
 .card_title {
+  font-size: 1.2rem;
   position: relative;
   width: -webkit-max-content;
   width: -moz-max-content;
