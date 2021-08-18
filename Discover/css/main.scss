@@ -1,74 +1,84 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-header{
-    // display: none;
+header {
+  // display: none;
 }
 
-.main-section{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    // width: 95vw;
-    margin: auto;    
+.main-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  // width: 95vw;
+  margin: auto;
 }
 
-.location{
-    // background-color: aqua;
-    position: fixed;
-    top: 40vh;
-    left: 5vw;
-    z-index: 50;
+.location {
+  // background-color: aqua;
+  position: fixed;
+  top: 40vh;
+  left: 5vw;
+  z-index: 50;
 }
 
-.location h1{
-    font-size: 2.5rem;
+.location h1 {
+  font-size: 2.5rem;
 }
 
-.location select{
-    // transform: translateY(px);
-    margin-top: 10px;
-    font-size: 1.2rem;
-    width: 15vw;
-    border: none;
-    background: none;
-    // text-decoration: underline;
-    transition: all 500ms ease;
+.location select {
+  // transform: translateY(px);
+  margin-top: 10px;
+  font-size: 1.2rem;
+  width: 15vw;
+  border: none;
+  background: none;
+  // text-decoration: underline;
+  transition: all 500ms ease;
 }
 
-.location .select{
-    border: none;
-    background: none;
-    text-decoration: underline;
+.location .select {
+  border: none;
+  background: none;
+  text-decoration: underline;
 }
 
-.location select:hover{
-    transform: scale(1.02);
+.location select:hover {
+  transform: scale(1.02);
 }
 
-.csec{
-    width: 70vw;
-    float: right;
-    // background-color: aqua;
-    position: absolute;
-    right: 0vw;
-    transform: translateX(-40px);
+.csec {
+  width: 70vw;
+  float: right;
+  // background-color: aqua;
+  position: absolute;
+  top: 1px;
+  right: 0vw;
+  transform: translateX(-40px);
 }
 
-#sw ul, #ed ul, #fd ul, #wm ul, #sp ul, #re ul{
-    // width: 60%;
-    // margin-right: 40px;
-    // transform: translateX(10px);
-    float: right;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#sw ul,
+#ed ul,
+#fd ul,
+#wm ul,
+#sp ul,
+#re ul {
+  // width: 60%;
+  // margin-right: 40px;
+  // transform: translateX(10px);
+  float: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#sw ul li, #ed ul li, #fd ul li, #wm ul li, #sp ul li, #re ul li{
-    list-style: none;
+#sw ul li,
+#ed ul li,
+#fd ul li,
+#wm ul li,
+#sp ul li,
+#re ul li {
+  list-style: none;
 }
-

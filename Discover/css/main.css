@@ -54,12 +54,18 @@
   width: 70vw;
   float: right;
   position: absolute;
+  top: 1px;
   right: 0vw;
   -webkit-transform: translateX(-40px);
           transform: translateX(-40px);
 }
 
-#sw ul, #ed ul, #fd ul, #wm ul, #sp ul, #re ul {
+#sw ul,
+#ed ul,
+#fd ul,
+#wm ul,
+#sp ul,
+#re ul {
   float: right;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -72,7 +78,12 @@
           justify-content: center;
 }
 
-#sw ul li, #ed ul li, #fd ul li, #wm ul li, #sp ul li, #re ul li {
+#sw ul li,
+#ed ul li,
+#fd ul li,
+#wm ul li,
+#sp ul li,
+#re ul li {
   list-style: none;
 }
 /*# sourceMappingURL=main.css.map */
