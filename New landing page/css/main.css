@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Circe Regular';
+}
+
+.section1 {
+  width: 100vw;
+  height: 100vh;
+  background: url(../../Ngo/bgoverlay.jpg);
+  background-size: cover;
+  overflow: hidden;
+}
+/*# sourceMappingURL=main.css.map */

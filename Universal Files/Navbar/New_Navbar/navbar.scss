@@ -1,0 +1,32 @@
+header{
+    height: 10vh;
+    background: rgba(196, 196, 196, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.logo_img{
+    height: 9.5vh;
+    // color: white;
+}
+
+.links ul{
+    display: flex;
+}
+
+.links ul li{
+    list-style: none;
+    padding: 5px 15px;
+    background: rgba(196, 196, 196, 0.5);
+    margin: 0 20px ;
+}
+
+.links ul li a{
+    text-decoration: none;
+    color: white;
+}
