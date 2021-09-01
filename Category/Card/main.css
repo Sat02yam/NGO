@@ -24,12 +24,12 @@ body {
   color: white;
   background: #0f78e8;
   background-size: cover;
+  margin: 20px;
   margin-top: 20vh;
-  margin-left: 2em;
   margin-bottom: 5em;
-  padding: 10rem 0 0;
-  width: 16vw;
-  height: 45vh;
+  padding: 2.5rem 0 0;
+  width: 22ch;
+  height: 300px;
   border-radius: 1em;
   overflow: hidden;
   -webkit-transition: -webkit-transform 500ms ease;
@@ -46,7 +46,7 @@ body {
 .card_content {
   --padding: 1.5em;
   padding: var(--padding);
-  margin-top: -50px;
+  margin-top: 10px;
 }
 
 .card_content p {
@@ -54,7 +54,7 @@ body {
 }
 
 .card_title {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   position: relative;
   width: -webkit-max-content;
   width: -moz-max-content;
